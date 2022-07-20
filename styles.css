@@ -10,95 +10,64 @@
 html,
 body {
     color: #414c52;
-    font-family: Roboto, Helvetica, Arial, sans-serif;
-    font-weight: 400;
-    line-height: 1.5;
-    letter-spacing: 0.00938em;
+    font-family: Roboto, Helvetica, Arial, sans-serif !important;
     background-color: #ffffff;
-}
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: 700;
-    margin-bottom: 0.3rem;
-}
-
-img,
-svg {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-button,
-input,
-select,
-textarea {
-    outline: none;
-    border: 0;
-}
-
-.title {
-    font-weight: 550;
-    font-size: 2em;
-    text-transform: uppercase;
-}
-
-.title.main {
-    color: #f2871c;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
 }
 
 #root {
-    width: 100%;
-    height: 100vh;
-}
-
-.banner-container {
     background: url("./assets/banner/main-banner-1.jpg"), transparent;
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
     width: 100%;
+    height: 100%;
+}
+
+.hero {
     height: 100%;
     position: relative;
 }
 
 .title-container {
-    width: 100%;
-    padding-top: 4.5rem;
+    padding-top: 4rem;
 }
 
 .title {
     color: #ffffff;
-    font-weight: 700;
-    text-align: left;
+    font-weight: 550;
+    font-size: 4em;
+    text-transform: uppercase;
+    line-height: 1;
+    margin: 0;
 }
 
-.main {
-    color: #ffffff !important;
+.title.main {
     font-size: 7em;
 }
 
-.secondary {
+.title.secondary {
     font-size: 6.5rem;
 }
 
 .slogan-container {
-    margin-top: 0.5rem;
+    margin-top: 1rem;
+    width: max-content;
+    max-width: 600px;
 }
 
 .slogan-text {
     background: rgba(233, 238, 244, 0.2);
     border-radius: 6px;
+
     color: #ffffff;
-
     font-weight: 550;
-    font-size: 1.5em;
+    font-size: 1.2em;
 
-    width: max-content;
     padding: 0.5rem 1rem;
 }
 
@@ -111,40 +80,139 @@ textarea {
 }
 
 .btn {
+    color: #ffffff;
     display: inline-flex;
-    -webkit-box-align: center;
     align-items: center;
-    -webkit-box-pack: center;
     justify-content: center;
-    position: relative;
-    box-sizing: border-box;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
     -webkit-tap-highlight-color: transparent;
-    background-color: #f2871c;
-    outline: 0px;
-    border: 0px;
-    margin: 0px;
-    cursor: pointer;
-    user-select: none;
+
+    background-color: #222f3a;
+    border: 2px solid #222f3a;
     vertical-align: middle;
     appearance: none;
     text-decoration: none;
+
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+
     font-family: Roboto, Helvetica, Arial, sans-serif;
     font-weight: 500;
-    font-size: 0.875rem;
-    line-height: 1.75;
-    letter-spacing: 0.02857em;
-    text-transform: uppercase;
-    min-width: 64px;
-    padding: 6px 8px;
-    border-radius: 4px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
-        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
-        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
-        color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
-.title-container,
-.slogan-container,
-.actions {
-    padding-left: 5rem;
+.btn.outlined {
+    background: transparent;
+    color: #222f3a;
+}
+
+.btn:hover,
+.btn:focus {
+    opacity: 0.7;
+    color: #ffffff;
+    border-color: #222f3a;
+    background-color: #222f3a;
+}
+
+@media only screen and (min-width: 2560px) {
+    .hero {
+        padding: 0;
+        margin-left: 10%;
+    }
+
+    .title.main {
+        font-size: 14em;
+    }
+
+    .title.secondary {
+        font-size: 12.5em;
+    }
+
+    .slogan-container {
+        max-width: max-content;
+    }
+
+    .slogan-text {
+        font-size: 3em;
+    }
+
+    .btn {
+        font-size: 2em;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .hero {
+        padding-left: 2%;
+    }
+
+    .title.main {
+        font-size: 6em;
+    }
+
+    .title.secondary {
+        font-size: 5.5em;
+    }
+
+    .slogan-text {
+        font-size: 1em;
+    }
+
+    .btn {
+        font-size: 0.8em;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .title.main {
+        font-size: 3.5em;
+    }
+
+    .title.secondary {
+        font-size: 3em;
+    }
+
+    .slogan-container {
+        max-width: 300px;
+    }
+
+    .slogan-text {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .title.main {
+        font-size: 3.5em;
+    }
+
+    .title.secondary {
+        font-size: 3em;
+    }
+
+    .slogan-container {
+        max-width: 300px;
+    }
+
+    .slogan-text {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 280px) {
+    .title.main {
+        font-size: 2.5em;
+    }
+
+    .title.secondary {
+        font-size: 2em;
+    }
+
+    .slogan-container {
+        max-width: 200px;
+    }
+
+    .slogan-text {
+        font-size: 0.8em;
+    }
 }

@@ -7,14 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#286768" />
     <meta name="author" content="OneMedia SA" />
+    <meta name="keywords" content="Educa Mocambique">
     <meta name="description"
-        content="O EDUCA MOÇAMBIQUE é o espaço ideal para universidades nacionais e estrangeiros, governos e empesas para estabelecer parcerias inteligentes com vista a oportunidades de formação dentro e fora do país, bem como para a transferência de tecnologias e troca de experiência." />
+        content="O EDUCA MOÇAMBIQUE é o espaço ideal para universidades nacionais e estrangeiros, governos e empresas para estabelecer parcerias inteligentes com vista a oportunidades de formação dentro e fora do país, bem como para a transferência de tecnologias e troca de experiência." />
 
     <!-- favicon -->
     <link rel="icon" type="image/svg+xml" href="/assets/logo/logo-yellow-educa.png" />
 
-    <!-- styles -->
-    <link rel="stylesheet" href="./styles.css" />
 
     <!-- Roboto font for mui icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
@@ -24,11 +23,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet" />
 
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css"
+        integrity="sha512-XWTTruHZEYJsxV3W/lSXG1n3Q39YIWOstqvmFsdNEEQfHoZ6vm6E9GK2OrF6DSJSpIbRbi+Nn0WDPID9O7xB2Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- styles -->
+    <link rel="stylesheet" href="./styles.css" />
 </head>
 
 <body>
     <div id="root">
-        <div class="banner-container">
+        <div class="container-fluid 
+        ">
             <div class="title-container">
                 <h2 class="title main">
                     Educa
@@ -37,25 +44,33 @@
                 <h2 class="title secondary">
                     MoÇambique
                 </h2>
-            </div>
 
-            <div class="slogan-container">
-                <p class="slogan-text">
-                    Feira e Conferência Internacional de Educação e Tecnologia
-                </p>
+                <div class="slogan-container">
+                    <p class="slogan-text">
+                        Feira e Conferência Internacional de Educação e Tecnologia
+                    </p>
+                </div>
             </div>
 
             <div class="actions">
-                <a href="https://event.educa.co.mz" class="link" target="_blank">
-                    <button class="btn">Evento online</button>
+                <a href="https://event.educa.co.mz" class="link btn" target="_blank">
+                    Evento online
                 </a>
 
-                <a href="https://register.educa.co.mz" target="_blank" class="link">
-                    <button class="btn">Registar expositor</button>
+                <a href="https://register.educa.co.mz" target="_blank " class="link btn outlined">
+                    Registar expositor
                 </a>
             </div>
         </div>
     </div>
+
+    <!-- bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/js/bootstrap.bundle.min.js"
+        integrity="sha512-9GacT4119eY3AcosfWtHMsT5JyZudrexyEVzTBWV3viP/YfB9e2pEy3N7WXL3SV6ASXpTU0vzzSxsbfsuUH4sQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/js/bootstrap.min.js"
+        integrity="sha512-8Y8eGK92dzouwpROIppwr+0kPauu0qqtnzZZNEF8Pat5tuRNJxJXCkbQfJ0HlUG3y1HB3z18CSKmUo7i2zcPpg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 
 </html>
