@@ -10,8 +10,10 @@
 html,
 body {
     color: #414c52;
-    font-family: "Nunito Sans", sans-serif;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
     font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
     background-color: #ffffff;
 }
 
@@ -21,7 +23,6 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Nunito Sans", sans-serif;
     font-weight: 700;
     margin-bottom: 0.3rem;
 }
@@ -63,4 +64,87 @@ textarea {
     width: 100%;
     height: 100%;
     position: relative;
+}
+
+.title-container {
+    width: 100%;
+    padding-top: 4.5rem;
+}
+
+.title {
+    color: #ffffff;
+    font-weight: 700;
+    text-align: left;
+}
+
+.main {
+    color: #ffffff !important;
+    font-size: 7em;
+}
+
+.secondary {
+    font-size: 6.5rem;
+}
+
+.slogan-container {
+    margin-top: 0.5rem;
+}
+
+.slogan-text {
+    background: rgba(233, 238, 244, 0.2);
+    border-radius: 6px;
+    color: #ffffff;
+
+    font-weight: 550;
+    font-size: 1.5em;
+
+    width: max-content;
+    padding: 0.5rem 1rem;
+}
+
+.actions {
+    margin-top: 2rem;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    background-color: #f2871c;
+    outline: 0px;
+    border: 0px;
+    margin: 0px;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    text-decoration: none;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.75;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+    min-width: 64px;
+    padding: 6px 8px;
+    border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.title-container,
+.slogan-container,
+.actions {
+    padding-left: 5rem;
 }
