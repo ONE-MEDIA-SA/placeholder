@@ -1,1 +1,1 @@
-# Placeholder for websites on maintenance mode
+# Placeholder for Educa Mocambique
